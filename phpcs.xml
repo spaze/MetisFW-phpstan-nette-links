@@ -8,12 +8,11 @@
 	<arg name="cache" value="build-cs/tmp/phpcs"/>
 	<arg value="sp"/>
 
-	<rule ref="build-cs/vendor/consistence-community/coding-standard/Consistence/ruleset.xml">
+	<rule ref="build-cs/consistence.xml">
 		<exclude name="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.InvalidFormat"/>
 		<exclude name="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
-		<exclude name="Consistence.Exceptions.ExceptionDeclaration"/>
 		<exclude name="Squiz.Commenting.FunctionComment"/>
 		<exclude name="Squiz.PHP.Heredoc.NotAllowed"/>
 		<exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
@@ -108,7 +107,7 @@
 		</properties>
 	</rule>
 	<rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps"/>
-	<rule ref="Consistence.NamingConventions.ValidVariableName.NotCamelCaps"/>
+	<rule ref="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
 	<exclude-pattern>tests/*/data</exclude-pattern>
 	<exclude-pattern>tests/*/data-attributes</exclude-pattern>
 </ruleset>
